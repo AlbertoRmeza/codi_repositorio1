@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mi primer JavaScript</h1>
+    <script>
+        // Yo aqui no puedo agregar texto asi como asi, este es un comenatrio
+        /* O puede ser multiple lineas 
+        poniendo esto */ 
+        function calcularCuadrado(numero){
+            // Validar que el numero > 0 y menor a 1000
+            // if(numero <= 0 || numero >= 1000){
+            //     console.error("El numero es menor que uno o mayor a 999");
+            //     return; // No continues retorna al punto de llamada
+            // }
+            console.log("Numero",numero)
+            if(numero <= 0){
+                console.error("Numero negativo");
+                return; 
+            }
+            if(numero > 999){
+                console.error("Numero muy grande");
+                return; 
+            }
+
+
+            let resultado = numero * numero
+            return resultado;
+        }
+        let x= 5;
+        console.log("X", x);
+        ++x;
+        console.log("X", x);
+
+        let xx = 4;
+        xx +=10;
+        console.log(xx)
+
+        let cuadrado = calcularCuadrado(1001);
+        console.log(" El cuadrado de 10 es:", cuadrado)
+
+        // con precalentarHorno = async    
+        setTimeout();
+
+    </script>
+
+    <h1>A termina</h1>
+
+</body>
+</html>
